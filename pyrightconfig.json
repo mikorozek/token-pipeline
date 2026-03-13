@@ -1,0 +1,10 @@
+{
+    "pythonVersion": "3.12",
+    "typeCheckingMode": "standard",
+    "extraPaths": [
+        "../ai-pipeline-core",
+        "/usr/local/lib/python3.12/site-packages"
+    ],
+    "include": ["."],
+    "reportMissingModuleSource": false
+}

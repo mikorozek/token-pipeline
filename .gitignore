@@ -1,0 +1,32 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.basedpyright/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local environment files
+.env
+.env.*
+
+# Editor / OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Pipeline run outputs and traces
+out-*/
+output/
+.trace/
+.flow_completions/
+*_replay/
