@@ -1,4 +1,4 @@
-# Cross-Chain Token Pipeline
+# Token Pipeline
 
 This project discovers token deployments across chains, checks bridge availability, gathers chain and audit context, and produces a final report for a given token contract.
 
@@ -41,7 +41,6 @@ LMNR_PROJECT_API_KEY=...
 Create a local virtual environment inside the project and install `ai-pipeline-core` in editable mode:
 
 ```bash
-cd cross_chain_token_pipeline
 uv venv
 uv pip install --python .venv/bin/python -e ../ai-pipeline-core
 ```
@@ -53,7 +52,7 @@ The application itself does not need editable installation for local runs. Run i
 From the workspace root:
 
 ```bash
-cross_chain_token_pipeline/.venv/bin/python -m cross_chain_token_pipeline ./out-token \
+.venv/bin/python -m cross_chain_token_pipeline ./out-token \
   --contract-address 0x... \
   --chain-name bsc
 ```
@@ -61,7 +60,7 @@ cross_chain_token_pipeline/.venv/bin/python -m cross_chain_token_pipeline ./out-
 Example:
 
 ```bash
-cross_chain_token_pipeline/.venv/bin/python -m cross_chain_token_pipeline ./out-cake \
+.venv/bin/python -m cross_chain_token_pipeline ./out-cake \
   --contract-address 0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82 \
   --chain-name bsc
 ```
